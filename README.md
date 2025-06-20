@@ -58,4 +58,24 @@ This repository contains a complete machine learning pipeline to classify human 
 | **Total Samples**     | 155,185   |
 
 ### 📉 Confusion Matrix
+         Predicted
+        0        1
+
+## 🔍 Model Explainability (SHAP)
+
+We used SHAP (SHapley Additive exPlanations) to interpret the XGBoost model and identify which features most influenced predictions:
+
+- **Top Features Identified**:
+  - `mutation_type`
+  - `OriginSimple`
+  - `Chromosome`
+  - `is_missense`, `is_nonsense`, etc.
+
+## 📊 Visuals Included
+
+- 📌 Bar plots of mutation types
+- 📌 Pathogenic vs Benign distribution
+- 📌 Heatmap of mutation type vs label
+- 📌 SHAP summary and feature importance plots
+- 📌 ROC curves and confusion matrix
 
