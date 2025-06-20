@@ -12,7 +12,7 @@ This repository contains a complete machine learning pipeline to classify human 
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Source**: [ClinVar Variant Summary](https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/variant_summary.txt.gz)
 - Filtered for:
@@ -23,9 +23,9 @@ This repository contains a complete machine learning pipeline to classify human 
 
 ---
 
-## ⚙️ Methods
+##  Methods
 
-### ✨ Mutation Classification
+### Mutation Classification
 - Regex-based parsing of the `Name` column to classify:
   - Missense
   - Nonsense
@@ -33,20 +33,20 @@ This repository contains a complete machine learning pipeline to classify human 
   - Splice-site
   - Others (e.g., synonymous, intronic)
 
-### 📈 Statistical Analysis
+### Statistical Analysis
 - Chi-Square test showed significant association between **mutation type** and **pathogenicity** (p < 0.05)
 
-### 🤖 ML Models Trained
-- ✅ **XGBoost (Best performing)**
+### ML Models Trained
+- **XGBoost (Best performing)**
 - Random Forest
 - Logistic Regression
 
-### 🔧 Hyperparameter Tuning
+### Hyperparameter Tuning
 - Performed using `RandomizedSearchCV` and `GridSearchCV` to optimize XGBoost parameters like `max_depth`, `learning_rate`, `n_estimators`, etc.
 
 ---
 
-## 🏆 Final Results (XGBoost)
+## Final Results (XGBoost)
 
 | Metric                | Value     |
 |-----------------------|-----------|
@@ -57,14 +57,14 @@ This repository contains a complete machine learning pipeline to classify human 
 | **F1-score (Pathogenic)**  | 0.85 |
 | **Total Samples**     | 155,185   |
 
-### 📉 Confusion Matrix
+### Confusion Matrix
 |                            | **Predicted: Benign (0)** | **Predicted: Pathogenic (1)** |
 | -------------------------- | ------------------------- | ----------------------------- |
 | **Actual: Benign (0)**     | 76,085                    | 7,465                         |
 | **Actual: Pathogenic (1)** | 13,582                    | 58,053                        |
 
 
-## 🔍 Model Explainability (SHAP)
+## Model Explainability (SHAP)
 
 We used SHAP (SHapley Additive exPlanations) to interpret the XGBoost model and identify which features most influenced predictions:
 
@@ -74,11 +74,11 @@ We used SHAP (SHapley Additive exPlanations) to interpret the XGBoost model and 
   - `Chromosome`
   - `is_missense`, `is_nonsense`, etc.
 
-## 📊 Visuals Included
+## Visuals Included
 
-- 📌 Bar plots of mutation types
-- 📌 Pathogenic vs Benign distribution
-- 📌 Heatmap of mutation type vs label
-- 📌 SHAP summary and feature importance plots
-- 📌 ROC curves and confusion matrix
+- Bar plots of mutation types
+- Pathogenic vs Benign distribution
+- Heatmap of mutation type vs label
+- SHAP summary and feature importance plots
+- ROC curves and confusion matrix
 
