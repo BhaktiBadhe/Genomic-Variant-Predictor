@@ -51,7 +51,7 @@ This repository contains a complete machine learning pipeline to classify human 
 | Metric                | Value     |
 |-----------------------|-----------|
 | **Accuracy**          | 86%       |
-| **ROC-AUC**           | `0.936`   |
+| **ROC-AUC**           | 0.936   |
 | **Precision (Pathogenic)** | 0.89 |
 | **Recall (Pathogenic)**    | 0.81 |
 | **F1-score (Pathogenic)**  | 0.85 |
@@ -69,10 +69,10 @@ This repository contains a complete machine learning pipeline to classify human 
 We used SHAP (SHapley Additive exPlanations) to interpret the XGBoost model and identify which features most influenced predictions:
 
 - **Top Features Identified**:
-  - `mutation_type`
-  - `OriginSimple`
-  - `Chromosome`
-  - `is_missense`, `is_nonsense`, etc.
+  - mutation_type
+  - OriginSimple
+  - Chromosome
+  - is_missense, is_nonsense, etc.
 
 ## Visuals Included
 
