@@ -58,8 +58,11 @@ This repository contains a complete machine learning pipeline to classify human 
 | **Total Samples**     | 155,185   |
 
 ### 📉 Confusion Matrix
-         Predicted
-        0        1
+|                            | **Predicted: Benign (0)** | **Predicted: Pathogenic (1)** |
+| -------------------------- | ------------------------- | ----------------------------- |
+| **Actual: Benign (0)**     | 76,085                    | 7,465                         |
+| **Actual: Pathogenic (1)** | 13,582                    | 58,053                        |
+
 
 ## 🔍 Model Explainability (SHAP)
 
