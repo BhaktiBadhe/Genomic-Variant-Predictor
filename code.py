@@ -218,9 +218,9 @@ print(f"Chi2 Statistic: {chi2:.3f}")
 print(f"p-value: {p:.4f}")
 print(f"Degrees of Freedom: {dof}")
 if p < 0.05:
-    print("✅ Statistically significant association between mutation type and pathogenicity.")
+    print("Statistically significant association between mutation type and pathogenicity.")
 else:
-    print("❌ No significant association found.")
+    print("No significant association found.")
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
